@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Monica/Scenes/Menu.unity
+    guid: e0c622cb91e2b364882d654202ac0b99
+  - enabled: 1
+    path: Assets/Monica/Scenes/TestingScene.unity
+    guid: f566969a17d87c6488110c245d183466
+  - enabled: 1
+    path: Assets/Monica/Scenes/Characters.unity
+    guid: d3445fbfb1359134590e2211a65761d6
   m_configObjects: {}
