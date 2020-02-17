@@ -7,10 +7,6 @@ public class PlayerMovement : MonoBehaviour
     //Assingables
     public Transform playerCam;
     public Transform orientation;
-    //Health Bar
-    public int maxHealth = 100;
-    public int currentHealth;
-    public HealthBar healthBar;
 
     //Other
     private Rigidbody rb;
@@ -64,8 +60,6 @@ public class PlayerMovement : MonoBehaviour
         playerScale = transform.localScale;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
     }
 
 
@@ -78,18 +72,6 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
         Look();
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(7);
-        }
-    }
-
-    //Test for the health bar
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        healthBar.SetHealth(currentHealth);
     }
 
     private void MyInput()
