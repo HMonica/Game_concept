@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 101557991}
   - component: {fileID: 101557990}
   - component: {fileID: 101557989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: trophyLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
